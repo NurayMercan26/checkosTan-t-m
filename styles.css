@@ -1,0 +1,188 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #111; /* Black background */
+    color: #ccc; /* Light gray text */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    height: 100vh; /* Full viewport height */
+    background-image: url('header-background.jpg'); /* Background image for header */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #1b1414; /* White text color */
+}
+
+.header-content {
+    margin-top: 9rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: #1c0404;
+    border-radius: 20px;
+}
+
+h1, h2, h3 {
+    color: #e0caca; /* White headings */
+    font-size: 2.3rem;
+}
+
+p {
+    color: #c9bcbc; /* Light gray paragraphs */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #86b4e6; /* Blue button */
+    color: #120202;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.life-info-item img{
+    width: 300px;
+    height: 300px;
+    margin-left: 2rem;
+}
+
+/* Specific styles for sections and charts */
+.section {
+    margin-bottom: 40px;
+}
+
+#achievement-chart-container {
+    max-width: 700px; /* Set max width for chart container */
+    margin: 0 auto; /* Center align the chart container */
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: #5c6167; /* Darker blue on hover */
+}
+
+/* Specific styles for sections and cards */
+.section {
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: #333; /* Dark gray background for cards */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift card slightly on hover */
+}
+
+.projects-container,
+.programs-container,
+.units-container,
+.life-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Gap between flex items */
+}
+
+.projects-container .project,
+.programs-container .program,
+.units-container .unit,
+.life-info .life-info-item {
+    flex: 1 1 300px; /* Flex items grow to fill container evenly */
+}
+
+.projects-container .project h3,
+.programs-container .program h3,
+.units-container .unit h3,
+.life-info .life-info-item h3 {
+    color: #fff;
+}
+
+.projects-container .project p,
+.programs-container .program ul,
+.units-container .unit ul,
+.life-info .life-info-item p {
+    color: #ddd;
+}
+
+.projects-container .project a,
+.programs-container .program ul li,
+.units-container .unit ul li,
+.life-info .life-info-item a {
+    color: #007bff;
+}
+
+.contact-container {
+    background-color: #444;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ddd;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #666;
+    border-radius: 4px;
+    background-color: #222;
+    color: #ccc;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .projects-container .project,
+    .programs-container .program,
+    .units-container .unit,
+    .life-info .life-info-item {
+        flex: 1 1 100%; /* Full width on smaller screens */
+    }
+}
